@@ -1,6 +1,11 @@
+import { useContext } from "react"
+import { UserContext } from "./context";
+
+
 
 export const Footer = () => {
+  const {user}  = useContext(UserContext);
   return (
-    <div>Ini Footer</div>
+    <div>{user.email}</div>
   )
 }

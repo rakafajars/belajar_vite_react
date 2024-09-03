@@ -1,5 +1,11 @@
+import { useContext } from "react";
+import { UserContext } from "./context"
+
 export const Header = () => {
+
+  const {user} = useContext(UserContext);
+
   return (
-    <div>ini Header</div>
+    <div>{user.name}</div>
   )
 }
