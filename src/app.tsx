@@ -6,11 +6,14 @@
 // import { UserProvider } from "./components/context"
 // import { Footer } from "./components/footer"
 // import { Header } from "./components/header"
-import { TodoProvider } from "./components/todo.context"
-import { TodoCreate } from "./components/todo.create"
-import { TodoList } from "./components/todo.list"
+// import { TodoProvider } from "./components/todo.context"
+// import { TodoCreate } from "./components/todo.create"
+// import { TodoList } from "./components/todo.list"
 // import { DashboardLayout } from "./components/layot.dashboard"
 // import { NoteApp } from "./components/note.app"
+
+import { BlogList } from "./component/blog.list"
+import { BlogProvider } from "./component/blog.provider"
 
 
 
@@ -46,11 +49,18 @@ import { TodoList } from "./components/todo.list"
 
 
 
+// function App() {
+//   return <TodoProvider>
+//     <TodoList />
+//     <TodoCreate/>
+//   </TodoProvider>
+// }
+
+
 function App() {
-  return <TodoProvider>
-    <TodoList />
-    <TodoCreate/>
-  </TodoProvider>
+  return <BlogProvider>
+    <BlogList />
+  </BlogProvider>
 }
 
 export default App
