@@ -3,9 +3,12 @@
 // import { Footer } from "./components/footer"
 // import { Header } from "./components/header"
 // import { Catalogs } from "./components/catalogs"
-import { UserProvider } from "./components/context"
-import { Footer } from "./components/footer"
-import { Header } from "./components/header"
+// import { UserProvider } from "./components/context"
+// import { Footer } from "./components/footer"
+// import { Header } from "./components/header"
+import { TodoProvider } from "./components/todo.context"
+import { TodoCreate } from "./components/todo.create"
+import { TodoList } from "./components/todo.list"
 // import { DashboardLayout } from "./components/layot.dashboard"
 // import { NoteApp } from "./components/note.app"
 
@@ -32,11 +35,22 @@ import { Header } from "./components/header"
 //   </>
 // }
 
+// function App() {
+//   return <UserProvider>
+//     <Header />
+//     <Footer />
+//   </UserProvider>
+// }
+
+// export default App
+
+
+
 function App() {
-  return <UserProvider>
-    <Header />
-    <Footer />
-  </UserProvider>
+  return <TodoProvider>
+    <TodoList />
+    <TodoCreate/>
+  </TodoProvider>
 }
 
 export default App
